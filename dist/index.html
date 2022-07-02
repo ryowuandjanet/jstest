@@ -1,1 +1,78 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Document</title><link rel="stylesheet" href="/styles.d358c97f.css"><script src="https://unpkg.com/htmx.org@1.7.0"></script></head><body> <div class="bg-gray-300 min-h-screen w-full"> <div class="max-w-screen-md mx-auto pt-20 px-10"> <div class="bg-white flex flex-col-reverse flex-wrap md:flex-col md:h-48 rounded-lg shadow-md"> <div class="md:w-1/2 p-4 w-full"> <img src="https://www.mcdonalds.com/content/dam/usa/nfl/assets/nav/arches-logo_108x108.jpg" alt="" class="w-8"> <h3 class="font-bold text-3xl">Fast Food & Cola</h3> <p>Get all your McDonald’s favorites delivered right to your doorstep with McDelivery® on Uber Eats or DoorDash.</p> </div> <div class="md:p-0 md:w-1/2 p-4 w-full"> <img src="https://isometric.online/wp-content/uploads/2020/04/food_svg.svg" alt="" class="mx-auto w-64"> </div> </div> </div> </div> <div class="container"> <include src="partials/header.html" locals="{'title':'Hello I am header'}"></include> <div class="text">Hello Screen !</div> </div> <div id="size"></div> <img src="/BJ.49825d8f.png" alt="bj"> <script src="/main.1ebf03a1.js"></script> </body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/styles.4a4b858f.css">
+<script src="/styles.4a4b858f.js"></script></head>
+<body>
+  <dialog id="create-item-dialog">
+    <div class="title">
+      New Item
+    </div>
+    <div>
+      <input type="text" placeholder="Description" name="description" id="description">
+    </div>
+    <div>
+      <input type="datetime-local" placeholder="datetime" name="datetime" id="datetime">
+    </div>
+
+    <div class="dialog-actions">
+      <button class="close">Cencel</button>
+      <button id="create-item">Create</button>
+    </div>
+
+  </dialog>
+
+  <div class="wrapper">
+    <header>
+      <div class="logo">
+        Todo List
+      </div>
+      <button id="add-new-button">Add New</button>
+    </header>
+
+    <div class="list">
+      <div class="list-item">
+        <div class="description">
+          Homework
+        </div>
+        <div class="datetime">
+          29 April 2022 16:00
+        </div>
+      </div>
+
+      <div class="list-item">
+        <div class="description">
+          Homework
+        </div>
+        <div class="datetime">
+          29 April 2022 16:00
+        </div>
+      </div>
+
+      <div class="list-item">
+        <div class="description">
+          Homework
+        </div>
+        <div class="datetime">
+          29 April 2022 16:00
+        </div>
+      </div>
+
+      <div class="list-item">
+        <div class="description">
+          Homework
+        </div>
+        <div class="datetime">
+          29 April 2022 16:00
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="/src.e31bb0bc.js"></script>
+</body>
+</html>

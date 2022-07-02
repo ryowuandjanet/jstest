@@ -5,32 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./static/css/styles.scss">
-  <script src="https://unpkg.com/htmx.org@1.7.0"></script>
 </head>
 <body>
+  <dialog id="create-item-dialog">
+    <div class="title">
+      New Item
+    </div>
+    <div>
+      <input type="text" placeholder="Description" name="description" id="description">
+    </div>
+    <div>
+      <input type="datetime-local" placeholder="datetime" name="datetime" id="datetime">
+    </div>
 
-  <div class="min-h-screen w-full bg-gray-300">
-  <div class="max-w-screen-md mx-auto px-10 pt-20">
-    <div class="bg-white md:h-48 rounded-lg shadow-md flex flex-wrap flex-col-reverse md:flex-col">
-      <div class="w-full md:w-1/2 p-4">
-        <img src="https://www.mcdonalds.com/content/dam/usa/nfl/assets/nav/arches-logo_108x108.jpg" alt="" class="w-8">
-        <h3 class="text-3xl font-bold">Fast Food & Cola</h3>
-        <p>Get all your McDonald’s favorites delivered right to your doorstep with McDelivery® on Uber Eats or DoorDash.</p>
+    <div class="dialog-actions">
+      <button class="close">Cencel</button>
+      <button id="create-item">Create</button>
+    </div>
+
+  </dialog>
+
+  <div class="wrapper">
+    <header>
+      <div class="logo">
+        Todo List
       </div>
-      <div class="w-full md:w-1/2 p-4 md:p-0">
-        <img src="https://isometric.online/wp-content/uploads/2020/04/food_svg.svg" alt="" class="w-64 mx-auto">
+      <button id="add-new-button">Add New</button>
+    </header>
+
+    <div class="list">
+      <div class="list-item">
+        <div class="description">
+          Homework
+        </div>
+        <div class="datetime">
+          29 April 2022 16:00
+        </div>
+      </div>
+
+      <div class="list-item">
+        <div class="description">
+          Homework
+        </div>
+        <div class="datetime">
+          29 April 2022 16:00
+        </div>
+      </div>
+
+      <div class="list-item">
+        <div class="description">
+          Homework
+        </div>
+        <div class="datetime">
+          29 April 2022 16:00
+        </div>
+      </div>
+
+      <div class="list-item">
+        <div class="description">
+          Homework
+        </div>
+        <div class="datetime">
+          29 April 2022 16:00
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-  <div class="container">
-  <include src="partials/header.html" locals="{'title':'Hello I am header'}"></include>
-    <div class="text">Hello Screen !</div>
-  </div>
 
-    <div id="size"></div>
-  <img src="./static/img/BJ.png" alt="bj">
-  <script src="./static/js/main.js"></script>
+  <script src="./index.js"></script>
 </body>
 </html>

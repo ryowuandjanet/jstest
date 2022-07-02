@@ -1,0 +1,1 @@
+{"version":3,"sources":["static\\css\\styles.scss"],"names":[],"mappings":"AAGA,EACE,cACA,QACE","file":"styles.3cc83bfd.css","sourceRoot":"..\\src","sourcesContent":["$link-color:#ff526f;\r\n$link-darkened-color: #ad001d;\r\n\r\na{\r\n  color: $link-color;\r\n  &:hover {\r\n    color: $link-darkened-color\r\n  }\r\n}"]}

@@ -5,7 +5,7 @@ function listItems() {
 }
 
 function createItem(item) {
-  return {}
+  return logic.createItem(item) 
 }
 
 function readItem(id) {

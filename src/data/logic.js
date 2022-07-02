@@ -1,4 +1,4 @@
-// import db from './db.js';
+import db from './db.js';
 
 function isObject(varirable){
   return typeof varirable === 'object'
@@ -14,7 +14,7 @@ function listItems() {
 }
 
 function createItem(item) {
-  if (!isObject(item) || !item?.description || !item?.datetime ){
+  if (!isObject(item) || !item?.description ){
     throw new Error("Item is invalid")
   }
   item.id=generateId()

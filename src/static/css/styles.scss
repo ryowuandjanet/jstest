@@ -17,6 +17,14 @@ header .logo {
   font-weight: bold;
 }
 
+.list:empty:after {
+  content: "Your list is empty. Click \"Add new\" to get started?";
+  display: block;
+  padding: 16px 0;
+  color: #888;
+  text-align: center;
+}
+
 .list-item {
   border: 1px solid #ccc;
   padding: 8px;
@@ -33,7 +41,7 @@ dialog .title {
   font-weight: bold;
 }
 
-dialog div:not(.title) {
+dialog .form div {
   margin-top: 16px;
 }
 
@@ -44,6 +52,7 @@ dialog input {
 }
 
 dialog .dialog-actions {
+  padding-top: 16px;
   display: flex;
   justify-content: space-between;
 }

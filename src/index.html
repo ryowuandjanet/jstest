@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./static/css/styles.scss">
 </head>
+
 <body>
   <dialog id="create-item-dialog">
     <div class="title">
       New Item
     </div>
-    <div>
-      <input type="text" placeholder="Description" name="description" id="description">
-    </div>
-    <div>
-      <input type="datetime-local" placeholder="datetime" name="datetime" id="datetime">
+    <div class="form">
+      <div>
+        <input type="text" placeholder="Description" name="description" id="description">
+      </div>
+      <div>
+        <input type="datetime-local" placeholder="datetime" name="datetime" id="datetime">
+      </div>
     </div>
 
+
     <div class="dialog-actions">
-      <button class="close">Cencel</button>
+      <button class="dialog-close">Cencel</button>
       <button id="create-item">Create</button>
     </div>
 
@@ -34,7 +39,7 @@
     </header>
 
     <div class="list">
-      <div class="list-item">
+      <!-- <div class="list-item">
         <div class="description">
           Homework
         </div>
@@ -68,11 +73,12 @@
         <div class="datetime">
           29 April 2022 16:00
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 
 
   <script src="./index.js"></script>
 </body>
+
 </html>

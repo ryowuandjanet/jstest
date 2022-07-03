@@ -1,16 +1,41 @@
 import db from './db.js';
 
-function isObject(varirable){
-  return typeof varirable === 'object'
+(function loadTestData() {[
+  {
+    description: 'Janet',
+    datetime: '29 Apr 2022 16:00'
+  },
+  {
+    description: 'Ryowu',
+    datetime: '29 Apr 2022 16:00'
+  },
+  {
+    description: 'Rita',
+    datetime: '29 Apr 2022 16:00'
+  },
+  {
+    description: 'Lawrence',
+    datetime: '29 Apr 2022 16:00'
+  }
+].forEach(createItem)
+})()
+
+function isObject(variable){
+  return typeof variable === 'object'
 }
 
-var id = 0
+var uniqueId = 1
 function generateId() {
-  return ++id
+  if (!uniqueId) uniqueId=1
+  return uniqueId++
+}
+
+function deref(variable){
+  return JSON.parse(JSON.stringify(variable)) 
 }
 
 function listItems() {
-  return JSON.parse(JSON.stringify(db))
+  return deref(db)
 }
 
 function createItem(item) {
@@ -22,8 +47,8 @@ function createItem(item) {
   return item
 }
 
-function readItem() {
-  return {}
+function readItem(id) {
+  return deref(db.find(item => item.id == id))
 }
 
 function updateItem (id) {

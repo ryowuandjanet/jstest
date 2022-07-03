@@ -10,7 +10,7 @@ function renderList() {
 
   data.listItems().forEach(item => {
     listElement.append(parseHTML(`
-      <div class="list-item">
+      <div class="list-item" data-item-id="${item.id}">
         <div class="description">
           ${item.description}
         </div>
@@ -33,6 +33,23 @@ function attachEventListeners() {
       e.target.closest('dialog').close()
       return false
     }
+
+    if(e.target.closest('.list-item')){
+      e.preventDefault()
+      var dialog =document.getElementById("read-item-dialog")
+      dialog.show()
+
+      var itemId = e.target.closest('.list-item').dataset["item-id"]
+      var itemData = data.readItem(itemId)
+      
+      console.log({itemData})
+      dialog.querySelector('.description').innerHTML=itemData.description
+      dialog.querySelector('.datetime').innerHTML=itemData.datetime
+      
+      return false
+    }
+
+     
   })
 
   document.getElementById("create-item").onclick = function(){

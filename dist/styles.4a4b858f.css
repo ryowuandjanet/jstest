@@ -18,7 +18,7 @@ header .logo {
 }
 
 .list:empty:after {
-  content: "Your list is empty. Click \"Add new\" to get started?";
+  content: 'Your list is empty. Click "Add new" to get started?';
   display: block;
   padding: 16px 0;
   color: #888;
@@ -36,7 +36,7 @@ header .logo {
   cursor: pointer;
 }
 
-dialog{
+dialog {
   width: 100%;
   max-width: 300px;
 }
@@ -61,3 +61,5 @@ dialog .dialog-actions {
   display: flex;
   justify-content: space-between;
 }
+
+/*# sourceMappingURL=/styles.4a4b858f.css.map */

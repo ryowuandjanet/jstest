@@ -9,7 +9,7 @@ function createItem(item) {
 }
 
 function readItem(id) {
-  return {}
+  return logic.readItem(id)
 }
 
 function updateItem(id, item) {
